@@ -123,6 +123,17 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    /**
+     * Adding a personal Costom Key
+     */
+
+     'developer' => 'Jacreator',
+
+     'dev-details' => [
+         'id' => 1,
+         'name' => config('app.developer'),
+     ],
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

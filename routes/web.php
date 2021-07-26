@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// return the list of admin
+Route::get('/admin', function () {
+    $array = config('customFile.adminisattors.admin');
+    return $array;
+});
