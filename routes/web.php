@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// return the list of admin
-Route::get('/admin', function () {
-    $array = config('customFile.adminisattors.admin');
-    return $array;
-});
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
